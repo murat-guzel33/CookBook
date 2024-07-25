@@ -1,4 +1,4 @@
-package com.muratguzel.cookbookapp
+package com.muratguzel.cookbookapp.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
