@@ -12,7 +12,7 @@
         android:layout_width="315dp"
         android:layout_height="201dp"
         android:layout_marginTop="50dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +25,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:hint="Yemek ismini giriniz"
+        android:hint="@string/enter_the_food_name"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="26dp"
         android:ems="10"
-        android:hint="Yemek malzemelerini giriniz"
+        android:hint="@string/enter_the_food_ingredients"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,8 +48,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="20dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/materialText">
@@ -58,17 +58,18 @@
             android:id="@+id/saveButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kaydet"
             android:layout_margin="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/button"
-         />
+            android:onClick="save"
+            android:text="@string/save"
+            app:layout_constraintEnd_toStartOf="@+id/button" />
 
         <Button
             android:id="@+id/deleteButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Sil" />
+            android:onClick="delete"
+            android:text="@string/delete" />
 
     </LinearLayout>
 
